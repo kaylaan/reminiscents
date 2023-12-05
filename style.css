@@ -27,7 +27,7 @@ svg.menu {
 	top: 40px;
 }
 
-h2, p, nav > a {
+h2, p, nav > a, form {
 	font-family: 'Pixel Operator', sans-serif;
 	font-size: 1.6em;
 }
@@ -42,11 +42,11 @@ a:link, a:visited {
 }
 
 a:hover {
-	text-decoration: orange wavy underline;
+	text-decoration: #f58318 wavy underline;
 }
 
 a:active {
-	color: hotpink;
+	color: #FF35C3;
 }
 
 nav {
@@ -54,7 +54,7 @@ nav {
 	flex-direction: column;
 	gap: 1.3em;
 	text-align: right;
-	background-color: gray;
+	background-color: #4f4f4e;
 }
 
 h1 {
@@ -83,7 +83,7 @@ footer > a:link, footer > a:visited, footer > a:active, footer > a:hover {
 
 header {
 	z-index: 1;
-	background-color: gray;
+	background-color: #4f4f4e;
 	display: flex;
 	flex-direction: column;
 	position: sticky;
@@ -102,16 +102,17 @@ div.video {
 }
 
 img.star {
+	display: block;
 	position: relative;
 	top: 50px;
 	left: 70px;
 }
 
 img.clouds {
-	position: absolute;
-	right: 50px;
-	left: 40px;
-	top: 850px;
+	display: block;
+	position: relative;
+	bottom: 200px;
+	left: 30px;
 }
 
 .container {
@@ -122,6 +123,11 @@ img.clouds {
 nav.visibility {
 	display: flex;
 /*	flex-direction: column;*/
+}
+
+polygon.nav:hover {
+	cursor: pointer;
+	fill: #FF35C3;
 }
 
 
@@ -154,7 +160,8 @@ display: none;}
 .c {grid-area: c;
 margin: 20px;}
 .d {grid-area: d;
-margin: 20px;}
+margin: 20px;
+text-align: right;}
 .e {grid-area: e;}
 .f {grid-area: f;
 display: none;}
@@ -164,7 +171,8 @@ display: none;}
 .i {grid-area: i;
 margin: 20px;}
 .j {grid-area: j;
-margin: 20px;}
+margin: 20px;
+text-align: right;}
 .k {grid-area: k;}
 .l {grid-area: l;
 display: none;}
@@ -174,7 +182,8 @@ display: none;}
 .o {grid-area: o;
 margin: 20px;}
 .p {grid-area: p;
-margin: 20px;}
+margin: 20px;
+text-align: right;}
 .q {grid-area: q;}
 .r {grid-area: r;
 display: none;}
@@ -184,6 +193,54 @@ display: none;}
 	text-align: center;
 }
 
+polygon.st0:hover {
+	cursor: pointer;
+}
+
+polygon.st0:active {
+/*	opacity: 80%;*/
+}
+
+svg.e > g > polygon.st0 {
+	fill: #67d60d;
+}
+
+svg.h > g > polygon.st0 {
+	fill: #1469e0;
+}
+
+svg.k > g > polygon.st0 {
+	fill: #FF35C3;
+}
+
+svg.n > g > polygon.st0 {
+	fill: #f58318;
+}
+
+/*svg.q > g > polygon.st0 {
+	fill: hotpink;
+}*/
+
+/* QUIZ */
+
+div.p5 {
+	text-align: center;
+	padding: 40px;
+}
+
+/* CONTACT */
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	width: 350px;
+	padding: 40px;
+	margin: auto;
+}
+
+.required {
+	color: red;
+}
 
 /* MEDIA QUERIES */
 
@@ -216,7 +273,8 @@ display: none;}
 	}
 
 	img.clouds {
-		left: 240px;
+		top: 150px;
+		left: 0;
 	}
 
 	svg.menu {
@@ -225,10 +283,13 @@ display: none;}
 
 	header {
 		flex-direction: row;
+		gap: 12em;
 	}
 
 	nav {
 		display: flex;
 		flex-direction: row;
+		margin: auto;
+		gap: 12em;
 	}
 }
