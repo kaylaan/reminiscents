@@ -16,31 +16,31 @@ let cinnamon = document.querySelector('.r');
 let screen = document.querySelector('body');
 
 function woodAppear() {
-	wood.style.display = 'flex'
+	wood.style.opacity = '1'
 }
 function sanitizerAppear() {
-	sanitizer.style.display = 'flex'
+	sanitizer.style.opacity = '1'
 }
 function chlorineAppear() {
-	chlorine.style.display = 'flex'
+	chlorine.style.opacity = '1'
 }
 function shampooAppear() {
-	shampoo.style.display = 'flex'
+	shampoo.style.opacity = '1'
 }
 function sunscreenAppear() {
-	sunscreen.style.display = 'flex'
+	sunscreen.style.opacity = '1'
 }
 function cinnamonAppear() {
-	cinnamon.style.display = 'flex'
+	cinnamon.style.opacity = '1'
 }
 
 function textDisappear() {
-	wood.style.display = 'none'
-	sanitizer.style.display = 'none'
-	chlorine.style.display = 'none'
-	shampoo.style.display = 'none'
-	sunscreen.style.display = 'none'
-	cinnamon.style.display = 'none'
+	wood.style.opacity = '0'
+	sanitizer.style.opacity = '0'
+	chlorine.style.opacity = '0'
+	shampoo.style.opacity = '0'
+	sunscreen.style.opacity = '0'
+	cinnamon.style.opacity = '0'
 }
 
 
