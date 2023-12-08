@@ -218,6 +218,10 @@ text-align: right;}
 	width: 90%;
 }
 
+.b, .e, .h, .k, .n, .q {
+	width: 100%;
+}
+
 .c, .d, .i, .j, .o, .p {
 	margin: 20px;
 	margin-top: 0;
