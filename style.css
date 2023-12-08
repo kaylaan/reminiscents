@@ -444,3 +444,25 @@ figcaption {
 		margin-right: 40px;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #383838;
+	}
+
+	.browse {
+		background-color: #383838;
+	}
+
+	header, nav {
+		background-color: #1469e0;
+	}
+
+	h2, p, nav > a, form, ul, figcaption {
+		color: white;
+	}
+
+	footer > a:link, footer > a:visited, footer > a:active, footer > a:hover {
+		color: white;
+	}
+}
