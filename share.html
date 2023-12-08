@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Share | Reminiscents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/teq5aih.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/decal.png">
+  </head>
+
+  <body>
+    <header>
+      <h1><a href='index.html'>reminiscents</a></h1>
+      <nav>
+        <a href='index.html#about'>About</a>
+        <a href='browse.html'>Browse</a>
+        <a href='quiz.html'>Quiz</a>
+        <a href='share.html'>Share</a>
+      </nav>
+      <svg class='menu' viewBox='0 0 480 480'>
+        <style type="text/css">
+/*          .st0{fill: white;}*/
+        </style>
+        <g>
+          <polygon class="nav" points="240.04,7.33 275.93,129.18 376.6,51.7 334.02,171.38 461,167.87 356.2,239.66 461,311.46 
+            334.02,307.95 376.6,427.63 275.93,350.15 240.04,472 204.14,350.15 103.47,427.63 146.05,307.95 19.07,311.46 123.87,239.66 
+            19.07,167.87 146.05,171.38 103.47,51.7 204.14,129.18  " fill='white'/>
+        </g>
+      </svg>
+    </header>
+
+    <main>
+      <h2 class='share'>Share your favorite scent with a friend!</h2>
+
+      <form method="post" action='https://formspree.io/f/xqkvrkrk'>
+        <label>
+          Sender's Name <span class='required'> *</span><br>
+          <textarea name='sender' cols='40' rows='2' required></textarea>
+        </label>
+
+        <label>
+          Sender's Email <span class='required'> *</span><br>
+          <textarea name='email' cols='40' rows='2' required></textarea>
+        </label>
+
+        <label>
+          Recipient's Name <span class='required'> *</span><br>
+          <textarea name='recipient' cols='40' rows='2' required></textarea>
+        </label>
+
+        <label>
+          Recipient's Address <span class='required'> *</span><br>
+          <textarea name='recipient' cols='40' rows='5' required></textarea>
+        </label>
+
+        <fieldset>
+          <legend>Which scent(s) would you like to send? <span class='required'> *</span></legend>
+
+          <label>
+            <input type='checkbox' name='year' value='wood'>
+            Wood
+          </label>
+
+          <label>
+            <input type='checkbox' name='year' value='sanitizer'>
+            Hand Sanitizer
+          </label>
+
+          <label>
+            <input type='checkbox' name='year' value='chlorine'>
+            Chlorine
+          </label>
+
+          <label>
+            <input type='checkbox' name='year' value='shampoo'>
+            Shampoo
+          </label>
+
+          <label>
+            <input type='checkbox' name='year' value='sunscreen'>
+            Sunscreen
+          </label>
+
+          <label>
+            <input type='checkbox' name='year' value='cinnamon'>
+            The Holidays
+          </label>
+        </fieldset>
+
+        <label>
+          Message to Recipient <span class='required'> *</span><br>
+          <textarea name='message' cols='40' rows='10' required></textarea>
+        </label>
+
+        <div>
+          <input type='submit' class='submit' value='Send &#128140'>
+        </div>
+      </form>
+    </main>
+
+    <div class='recommendation'>
+      <article class='article'>
+        <p>Stuck? Click on the image for a new scent recommendation:</p>
+        <h2 class='scent'>Chlorine</h2>
+      </article>
+
+      <img src='images/chlorine-450.jpg' width='450' height='225' alt='Close-up of pool pattern' srcset='images/chlorine-450.jpg 450w, images/chlorine-900.jpg 900w' class='main'>
+    </div>
+
+    <section>
+      <img class='envelope' src='images/envelope-600.jpg' srcset='images/envelope-600.jpg 600w, images/envelope-1200.jpg 1200w' width='600' height='800' alt='Colorful envelope with green "about" card, reminiscents brand tag, and round stickers'>
+
+      <div>
+        <h2>What's in the envelope?</h2>
+        <ul>
+          <li>handwritten letter</li>
+          <li>"about" scent cards</li>
+          <li>scratch & sniff stickers</li>
+          <li>laser-cut reminiscents brand tag</li>
+        </ul>
+      </div>
+    </section>
+   
+    <h2 class='share'>Process</h2>
+
+    <section>
+      <figure>
+        <img src='images/laser-300.jpg' srcset='images/laser-300.jpg 300w, images/laser-900.jpg 900w' width='300' height='300' alt='Laser cutter cutting shape out of red paper'>
+        <figcaption>Using laser cutter to cut & engrave</figcaption>
+      </figure>
+      <figure>
+        <img src='images/circles-300.jpg' srcset='images/circles-300.jpg 300w, images/circles-900.jpg 900w' width='300' height='300' alt='Cut paper before sticker assembly'>
+        <figcaption>Assembling cut shapes into stickers</figcaption>
+      </figure>
+      <figure>
+        <img src='images/letter-300.jpg' srcset='images/letter-300.jpg 300w, images/letter-900.jpg 900w' width='300' height='300' alt='Sample Reminiscents letter'>
+        <figcaption>Writing handwritten letter</figcaption>
+      </figure>
+    </section>
+
+    <hr>
+
+    <footer>
+      <a><p>Kayla An</p></a>
+      <a href='https://cs.nyu.edu/home/index.html' target=”_blank”><p>Intro to Web Design & Computer Principles</p></a>
+      <a href='https://itp.nyu.edu/ima/' target=”_blank”><p>Communications & Technology</p></a>
+    </footer>
+
+    <script src='navigation.js'></script>
+    <script src='recommend.js'></script>
+  </body>
+</html>

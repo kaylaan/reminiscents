@@ -9,14 +9,20 @@
 	font-family: 'Pixel Operator Bold';
 	src: url('fonts/PixelOperator-Bold.woff');
 }
-
+/*
+* {
+	margin: 0;
+}
+*/
 html {
 	scroll-behavior: smooth;
+	width: 100%;
 }
 
 body {
 	background-color: #fce6f5;
 	margin: 0;
+	width: 100%;
 }
 
 .browse {
@@ -28,12 +34,17 @@ svg.menu {
 	width: 40px;
 	height: 40px;
 	right: 20px;
-	top: 40px;
+	top: 35px;
 }
 
-h2, p, nav > a, form {
+h2, p, nav > a, form, ul, figcaption {
 	font-family: 'Pixel Operator', sans-serif;
 	font-size: 1.6em;
+}
+
+figcaption {
+	font-size: 1em;
+	padding: 10px;
 }
 
 h2 {
@@ -67,6 +78,10 @@ h1 {
 	font-style: italic;
 }
 
+h1 {
+	font-size: 1.6em;
+}
+
 footer {
 	display: flex;
 /*	gap: 10%;*/
@@ -93,6 +108,8 @@ header {
 	position: sticky;
 	top: 0;
 	padding: 20px;
+	/*width: 100%;
+	margin: 0;*/
 }
 
 /* INDEX */
@@ -174,28 +191,22 @@ polygon.nav:hover {
 
 .a {grid-area: a;}
 .b {grid-area: b;}
-.c {grid-area: c;
-margin: 20px;}
+.c {grid-area: c;}
 .d {grid-area: d;
-margin: 20px;
 text-align: right;}
 .e {grid-area: e;}
 .f {grid-area: f;}
 .g {grid-area: g;}
 .h {grid-area: h;}
-.i {grid-area: i;
-margin: 20px;}
+.i {grid-area: i;}
 .j {grid-area: j;
-margin: 20px;
 text-align: right;}
 .k {grid-area: k;}
 .l {grid-area: l;}
 .m {grid-area: m;}
 .n {grid-area: n;}
-.o {grid-area: o;
-margin: 20px;}
+.o {grid-area: o;}
 .p {grid-area: p;
-margin: 20px;
 text-align: right;}
 .q {grid-area: q;}
 .r {grid-area: r;}
@@ -203,7 +214,14 @@ text-align: right;}
 .a, .f, .g, .l, .m, .r {
 	opacity: 0;
 	transition-property: opacity;
-	transition-duration: 1s;
+	transition-duration: 0.7s;
+	width: 90%;
+}
+
+.c, .d, .i, .j, .o, .p {
+	margin: 20px;
+	margin-top: 0;
+	padding-top: 0;
 }
 
 #instructions {
@@ -263,6 +281,74 @@ form {
 	color: red;
 }
 
+.recommendation {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+/*	margin: 40px;*/
+	padding: 40px;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+}
+
+.main:hover {
+	cursor: pointer;
+}
+
+.submit {
+  background-color: #FF35C3; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  margin-left: auto;
+  font-size: 24px;
+  font-family: 'Pixel Operator';
+}
+
+.submit:hover {
+	cursor: pointer;
+	opacity: 50%;
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+
+.envelope {
+	width: 70%;
+	height: auto;
+	margin: auto;
+	/*display: flex;
+	justify-content: center;*/
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+section > div {
+	margin: auto;
+}
+
+.share {
+	margin: auto;
+	text-align: center;
+	padding: 40px;
+}
+
+figure {
+	margin: auto;
+}
+
+figcaption {
+	padding-bottom: 40px;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 750px) {
@@ -299,7 +385,7 @@ form {
 
 	header {
 		flex-direction: row;
-		gap: 25vw;
+		justify-content: space-between;
 	}
 
 	nav {
@@ -307,10 +393,49 @@ form {
 		flex-direction: row;
 		margin-top: auto;
 		margin-bottom: auto;
-		gap: 10vw;
+		gap: 90px;
 	}
 
 	video {
 		width: 60%;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	.c, .d, .i, .j, .o, .p {
+		margin: 30px;
+	}
+
+	section {
+		flex-direction: row;
+		justify-content: center;
+		gap: 40px;
+		padding: 20px;
+	}
+
+	.envelope {
+		width: 30%;
+		margin: 0;
+	}
+
+	section > div {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	figure {
+		margin: 0;
+	}
+
+	.recommendation {
+		flex-direction: row;
+	}
+
+	.article {
+		width: 20%;
+		text-align: right;
+		margin-right: 40px;
 	}
 }
