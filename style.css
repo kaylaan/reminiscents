@@ -271,6 +271,7 @@ div.p5 {
 	font-size: 0.8em;
 	padding: 30px;
 	margin: auto;
+	padding-bottom: 0;
 }
 
 p > a:link, p > a:visited {
