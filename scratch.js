@@ -41,6 +41,7 @@ function textDisappear() {
 	shampoo.style.opacity = '0'
 	sunscreen.style.opacity = '0'
 	cinnamon.style.opacity = '0'
+}
 
 // mousedown & mouseup for click & drag
 // pointerover & pointerout for touchscreen
