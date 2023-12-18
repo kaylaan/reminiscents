@@ -41,14 +41,14 @@ function textDisappear() {
 	shampoo.style.opacity = '0'
 	sunscreen.style.opacity = '0'
 	cinnamon.style.opacity = '0'
-}
 
+// mousedown & mouseup for click & drag
+// pointerover & pointerout for touchscreen
+woodSticker.addEventListener('pointerover', woodAppear);
+sanitizerSticker.addEventListener('pointerover', sanitizerAppear);
+chlorineSticker.addEventListener('pointerover', chlorineAppear);
+shampooSticker.addEventListener('pointerover', shampooAppear);
+sunscreenSticker.addEventListener('pointerover', sunscreenAppear);
+cinnamonSticker.addEventListener('pointerover', cinnamonAppear);
 
-woodSticker.addEventListener('mousedown', woodAppear);
-sanitizerSticker.addEventListener('mousedown', sanitizerAppear);
-chlorineSticker.addEventListener('mousedown', chlorineAppear);
-shampooSticker.addEventListener('mousedown', shampooAppear);
-sunscreenSticker.addEventListener('mousedown', sunscreenAppear);
-cinnamonSticker.addEventListener('mousedown', cinnamonAppear);
-
-screen.addEventListener('mouseup', textDisappear);
+screen.addEventListener('pointerout', textDisappear);
